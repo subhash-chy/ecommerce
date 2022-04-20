@@ -11,13 +11,19 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@reduxjs/toolkit": "^1.8.1",
+    "@stripe/stripe-js": "^1.27.0",
+    "axios": "^0.26.1",
     "firebase": "^9.6.11",
+    "firebase-admin": "^10.0.2",
+    "micro": "^9.3.4",
+    "moment": "^2.29.3",
     "next": "12.1.5",
     "next-auth": "^4.3.2",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-redux": "^7.2.8",
-    "react-responsive-carousel": "^3.2.23"
+    "react-responsive-carousel": "^3.2.23",
+    "stripe": "^8.217.0"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.3.1",
