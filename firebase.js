@@ -16,11 +16,11 @@ const firebaseConfig = {
 //   ? firebase.initializeApp(firebaseConfig)
 //   : firebase.app();
 
-// const app = firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
 
-const app = firebase.app()
-  ? firebase.app()
-  : firebase.initializeApp(firebaseConfig);
+// const app = firebase.app()
+//   ? firebase.app()
+//   : firebase.initializeApp(firebaseConfig);
 
 const db = app.firestore();
 
