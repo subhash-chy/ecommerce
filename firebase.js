@@ -12,9 +12,15 @@ const firebaseConfig = {
 };
 
 // Double check if there is double initialization of the app
-const app = !firebase.app.length
-  ? firebase.initializaApp(firebaseConfig)
-  : firebase.app();
+// const app = !firebase.app.length
+//   ? firebase.initializeApp(firebaseConfig)
+//   : firebase.app();
+
+// const app = firebase.initializeApp(firebaseConfig);
+
+const app = firebase.app()
+  ? firebase.app()
+  : firebase.initializeApp(firebaseConfig);
 
 const db = app.firestore();
 

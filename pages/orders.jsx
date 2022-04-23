@@ -29,7 +29,7 @@ export async function getServerSideProps(context) {
     stripeOrders.docs.map(async (order) => ({
       id: order.id,
       amount: order.data().amount,
-      amountShipping: order.data.amount_shipping(),
+      amountShipping: order.data().amount_shipping,
       images: order.data().images,
       timestamp: moment(order.data().timestamp.toDate()).unix(),
       items: (
@@ -59,7 +59,7 @@ function Orders({ orders }) {
         </h1>
 
         {session ? (
-          <h2>10 Orders</h2>
+          <h2>{orders.length} Orders</h2>
         ) : (
           <h2>Please signin to see your orders</h2>
         )}
